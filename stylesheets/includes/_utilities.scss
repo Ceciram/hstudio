@@ -1,0 +1,45 @@
+$margins-paddings: ("p": "padding", "m": "margin", "pt": "padding-top", "pb": "padding-bottom", "pl": "padding-left", "pr": "padding-right", "mt": "margin-top", "mb": "margin-bottom", "ml": "margin-left", "mr": "margin-right");
+// \\ Negative Margins & Paddings
+@each $mp-class, $mp-property in $margins-paddings {
+	@for $h from 0 to 11 {
+	  .#{$mp-class}-#{$h*7} {
+	    #{$mp-property}: rem($h*7)!important;
+	    #{$mp-property}: ($h*7) + px !important;
+	  }
+	}
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.container {
+  padding: 0px 100px;
+}
+
+$vino: #B71C1C;
+$gris-claro: #DECC9E;
+$gris-oscuro: #1c1d21;
+$ocre: #BB3A3D;
+
+.pt {
+	padding-top: 35px;
+}
+.pb {
+	padding-bottom: 35px;
+}
+.mt {
+	margin-top: 28px;
+}
+
+.mb {
+	margin-bottom: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.4;
+}

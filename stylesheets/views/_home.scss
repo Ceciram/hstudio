@@ -1,0 +1,509 @@
+$vino: #B71C1C;
+$gris-claro: #DECC9E;
+$gris-oscuro: #1c1d21;
+$ocre: #BB3A3D;
+
+header {
+	background-color: $vino;
+	h1 {
+		color: white;
+		font-family: serif;
+	}
+	.carrusel {
+  	height: 300px;
+	}
+	.view-portafolio {
+		background: url(../images/view-portafolio.png) no-repeat center top;
+		height: 43px;
+  	position: relative;
+  	top: -30px;
+  	padding: 12px;
+  	a {
+  		color: $vino;
+  	}
+	}
+	.flex-direction-nav .flex-prev, .flex-direction-nav .flex-next {
+	  background-color: rgba(188, 125, 140, 0.4);
+	  border-radius: 50%;
+	  padding: 14px;
+	}
+	.flex-direction-nav .flex-prev {
+		 left: -88px;
+	}
+	.flex-direction-nav .flex-next {
+	  right: -88px;
+	}
+}
+
+nav.navbar.navbar-default {
+	background-color: $vino;
+  height: 120px;
+  border-color: $vino;
+  border-radius: 0px;
+  a.navbar-brand {
+	  height: 100%;
+	  margin-top: 14px;
+	}
+	a:hover {
+		background-color: #87181B;
+		color: white;
+  	border-radius: 7px;
+	}
+ 	ul {
+  	margin-top: 35px;
+		a{
+			color: white;
+		}
+	}
+	.borde {
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+#blog {
+	.post {
+		padding: 7px;
+		h4 {
+  		padding-left: 49px;
+		}
+	}
+	hr {
+		border: 2px solid gray;
+  	margin: 0;
+	}
+	.datos {
+		ul {
+			padding-left: 0px;
+			li {
+				list-style: none;
+				font-size: 11px;
+				float: left;
+	  		padding: 0px 21px;
+			}
+		}
+	}
+	.foto {
+	  height: 110px;
+	  width: 100%;
+	  background: black;
+	  border-radius: 9px;
+	}
+	.view-blog {
+		background: url(../images/view-blog.png) no-repeat center top;
+		height: 43px;
+  	padding: 12px;
+  	text-align: center;
+  	a {
+  		color: white;
+  	}
+	}
+	a {
+		color: gray;
+	}
+	a:hover {
+		color: $vino;
+		text-decoration: none;
+	}
+	.btn {
+	  background: #aeb3bd;
+	  background-image: -webkit-linear-gradient(top, #e4e6eb, #d9dee0);
+	  border-radius: 9px;
+	  color: black;
+	  padding: 0px 7px;
+	}
+	.btn:hover {
+	  background: #fc3c3c;
+	  background-image: -webkit-linear-gradient(top, #fc3c3c, #d93434);
+	  text-decoration: none;
+	}
+}
+
+#follow {
+	background-color: gainsboro;
+	.follows {
+		h5 {
+			font-size: 12px;
+			a, i {
+  			color: $vino;
+			}
+		}
+	}
+	.bubble {
+		position: relative;
+		width: 100%;
+		padding: 14px;
+		background: #FFFFFF;
+		border-radius: 5px;
+		border: #B4B5AB solid 2px;
+	}
+	.bubble:after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		border-width: 0 14px 15px;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 1;
+		top: -15px;
+		left: 125px;
+	}
+	.bubble:before {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		border-width: 0 15px 16px;
+		border-color: #B4B5AB transparent;
+		display: block;
+		width: 0;
+		z-index: 0;
+		top: -18px;
+		left: 125px;
+	}
+	.view-follow {
+		background: url(../images/view-follow.png) no-repeat center top;
+		height: 43px;
+  	padding: 12px;
+  	text-align: center;
+  	a {
+  		color: grey;
+  	}
+	}
+}
+
+#meet {
+	background-color: $gris-oscuro;
+	h4, li {
+		color: white;
+	}
+	h4 {
+		i {
+			font-size: 12px;
+		}
+	}
+	ul.mt {
+	  padding-left: 14px;
+	  border-right: 1px solid;
+	}
+	.redes.clearfix {
+		padding-top: 14px;
+	}
+	.input-group {
+		width: 85%;
+	  background-color: black;
+	  border-radius: 14px;
+	  margin: 21px 7px;
+	  input.form-control {
+		  background-color: black;
+		  border-color: black;
+		}
+		span#basic-addon2 {
+		  background-color: $vino;
+		  border-color: $vino;
+		  color: white;
+		  border-radius: 14px;
+		}
+	}
+	h4.phone {
+		color: $ocre;
+		letter-spacing: 1px;
+		i {
+			color: white;
+		}
+	}
+	h6 {
+		color: $gris-claro;
+	}
+	ul {
+		padding-left: 0px;
+		li {
+			list-style: none;
+			padding: 10px 0px;
+			font-size: 11px;
+		}
+		a {
+			color: white;
+		}
+		a:hover {
+			color: $ocre;
+		}
+	}
+	.bubble {
+		color: grey;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		padding: 21px;
+		background: #1b1a1d;
+		-webkit-border-radius: 9px;
+		-moz-border-radius: 9px;
+		border-radius: 9px;
+		border: #000000 solid 1px;
+	}
+	.bubble:after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		border-width: 15px 14px 0;
+		border-color: #211E29 transparent;
+		display: block;
+		width: 0;
+		z-index: 1;
+		bottom: -15px;
+		left: 128px;
+	}
+	.bubble:before {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		border-width: 16px 15px 0;
+		border-color: #000000 transparent;
+		display: block;
+		width: 0;
+		z-index: 0;
+		bottom: -18px;
+		left: 127px;
+	}
+	ul.redes {
+		li {
+			padding: 0px;
+			display: inline-block;
+  		margin-right: 12px;
+			.red1 {
+				float: left;
+				width: 42px;
+				height: 42px;
+				background: url(../images/twitter.png)
+			}
+			.red1:hover {
+				background-position: bottom;
+			}
+			.red2 {
+				float: left;
+				width: 42px;
+				height: 42px;
+				background: url(../images/facebook.png)
+			}
+			.red2:hover {
+				background-position: bottom;
+			}
+			.red3 {
+				float: left;
+				width: 42px;
+				height: 42px;
+				background: url(../images/wifi.png)
+			}
+			.red3:hover {
+				background-position: bottom;
+			}
+			.red4 {
+				float: left;
+				width: 42px;
+				height: 42px;
+				background: url(../images/google+.png)
+			}
+			.red4:hover {
+				background-position: bottom;
+			}
+			.red5 {
+				float: left;
+				width: 42px;
+				height: 42px;
+				background: url(../images/linkedin.png)
+			}
+			.red5:hover {
+				background-position: bottom;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.etiqueta {
+		background: url(../images/etiqueta.png) no-repeat center top;
+		height: 43px;
+  	position: relative;
+  	top: 50px;
+  	padding: 12px;
+  	a {
+  		color: white;
+  	}
+	}
+	.etiqueta:hover {
+		background-position: bottom;
+	}
+}
+
+footer {
+	background-color: black;
+	.logo-derechos {
+		padding: 14px 0px;
+		.logo {
+			display: inline-block;
+			width: 60px;
+			img {
+				width: 100%;
+			}
+		}
+		.derechos {
+  		display: inline-block;
+  		float: right;
+  		color: white;
+  		font-size: 11px;
+		}
+	}
+}
+
+.calendario {
+	width: 105%;
+  position: relative;
+  right: 21px;
+	h5 {
+		color: white;
+		padding-left: 49px;
+	}	
+
+/*CALENDARIO*/
+
+ol.calendar  {
+	width:100%;
+	margin:0 auto;
+	display:block; 
+	min-height: 200px;
+	padding: 12px 0 20px;
+	border-right: 1px solid;
+}
+
+ol.calendar ol.fecha li {
+  color: grey !important;
+}
+
+li {
+	list-style:none;
+	text-align: center;
+	li:hover {
+  	background-color: white;
+  	color: $vino !important;
+	}
+}
+p.link {
+	text-align:center;
+	display: block;
+}
+h1	{
+	display: block; 
+	width: 200px;
+	height:76px;
+	background:url(images/july.png);
+	text-indent:-9999px; 
+	margin: 15px auto; 
+}
+/*
+ * Day styles
+ -------------------------*/
+li li	{
+	width:2em;
+	float:left;
+	margin:.2em; 
+	padding:.2em;
+	overflow:auto;
+}
+
+/*
+ * Day content (UL/OL & P)
+ -------------------------*/
+li li p	 {
+	font-size:.7em;
+	display:block;
+}
+
+li li ol	{
+	width:auto;
+}
+
+li li ul li,
+li li ol li  {
+	font-size:.7em;
+	display:block;
+	height:auto;
+	width:auto; 
+	background: none;
+	margin:0;padding:.2em 0;
+	float:none;
+}
+
+/*
+ * Holiday class
+ -------------------------*/
+li li.holiday    {  }
+
+/*
+ * Inactive months
+ -------------------------*/
+li#lastmonth li,
+li#nextmonth li   {
+ 	background: url(images/day-bg-inactive.png);
+ 	color: $gris-claro;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.container {
+		padding: 0px !important;
+	}
+	#blog {
+		text-align: center;
+		h4 {
+			padding-left: 0px !important;
+		}
+		hr {
+		  margin: 21px !important;
+		}
+		.datos {
+			ul {
+				padding-left: 0px;
+				li {
+					padding: 0px 6px;
+				}
+			}
+		}
+	}
+	.view-blog.mt, .view-portafolio.mt, .view-follow {
+	  margin-bottom: 35px;
+	}
+	.view-portafolio {
+		margin-top: 35px;
+	}
+	.etiqueta {
+	  margin-bottom: 35px;
+	  margin-top: 35px;
+	  position: relative !important;
+	  top: 0 !important;
+	}
+	#meet {
+		text-align: center;
+		.col-md-4 {
+			padding-top: 35px;
+		}
+	}
+	footer {
+		.logo-derechos {
+		  text-align: center;
+		  .logo {
+			  padding-bottom: 14px;
+			}
+		}
+	}
+	.flex-direction-nav .flex-prev, .flex-direction-nav .flex-next {
+	  background-color: rgba(188, 125, 140, 0.4);
+	  border-radius: 50%;
+	  padding: 14px;
+	}
+	.calendario ol.calendar {
+	  padding: 12px 25px 20px;
+	}
+}
